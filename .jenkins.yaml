@@ -4,7 +4,7 @@ triggers:
 
 git:
   branches:
-    - master
+    - main
 
 docker_name: euwallet-satosa
 builders:
