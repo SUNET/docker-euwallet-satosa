@@ -1,0 +1,25 @@
+[project]
+name = "docker-euwallet-satosa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fedservice",
+    "idpyoidc",
+    "idpysdjwt",
+    "openid4v",
+    "pyeudiw[satosa]>=0.8.0",
+    "pystache>=0.6.8",
+    "satosa-idpyop",
+    "satosa-openid4vci",
+    "swamid-plugins==0.1.0",
+]
+
+[tool.uv.sources]
+idpyoidc = { git = "https://github.com/IdentityPython/idpy-oidc.git", rev = "issuer_metadata" }
+openid4v = { git = "https://github.com/SUNET/openid4v.git" }
+idpysdjwt = { git = "https://github.com/SUNET/idpy-sdjwt.git" }
+fedservice = { git = "https://github.com/SUNET/fedservice.git" }
+satosa-idpyop = { git = "https://github.com/SUNET/satosa-idpy.git" }
+satosa-openid4vci = { git = "https://github.com/SUNET/satosa-openid4vci.git" }

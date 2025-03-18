@@ -1,0 +1,13 @@
+---
+triggers:
+  cron: "@daily"
+
+git:
+  branches:
+    - master
+
+docker_name: euwallet-satosa
+builders:
+  - docker
+docker_tags:
+  - "0.0.1"
