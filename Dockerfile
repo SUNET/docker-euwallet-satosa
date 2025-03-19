@@ -4,9 +4,7 @@ RUN apt update && apt install -y --no-install-recommends git
 COPY ./uv.lock /
 COPY ./pyproject.toml /
 
-RUN --mount=type=bind,source=uv.lock,target=uv.lock \
-    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    uv sync --frozen --no-install-project
+RUN uv sync --frozen --no-install-project
 
 # Set language to prevent errors when breaking
 # into the container to run satosa-saml-metadata.
