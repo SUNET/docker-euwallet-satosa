@@ -7,7 +7,7 @@ RUN uv sync --frozen
 ENV PATH=$PATH:/.venv/bin
 # Set language to prevent errors when breaking
 # into the container to run satosa-saml-metadata.
-ENV PATH=$PATH:/.venv/bin LC_ALL=C.UTF-8 LANG=C.UTF-8
+ENV PATH=/.venv/bin:$PATH LC_ALL=C.UTF-8 LANG=C.UTF-8
 
 COPY start.sh /tmp/satosa/start.sh
 COPY attributemaps /tmp/satosa/attributemaps
