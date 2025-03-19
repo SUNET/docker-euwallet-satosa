@@ -1,6 +1,9 @@
 FROM python:3.12-slim-bookworm
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 RUN apt update && apt install -y --no-install-recommends git
+COPY ./uv.lock /
+COPY ./pyproject.toml /
+
 RUN --mount=type=bind,source=uv.lock,target=uv.lock \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     uv sync --frozen --no-install-project
