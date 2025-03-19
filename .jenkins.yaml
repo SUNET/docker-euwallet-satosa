@@ -6,9 +6,8 @@ git:
   branches:
     - main
     - 0.0.2
-
+managed_scripts:
+   - docker_tag.sh
 docker_name: euwallet-satosa
 builders:
   - docker
-docker_tags:
-  - "0.0.1"
