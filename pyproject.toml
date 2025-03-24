@@ -29,3 +29,4 @@ idpysdjwt = { git = "https://github.com/SUNET/idpy-sdjwt.git" }
 fedservice = { git = "https://github.com/SUNET/fedservice.git" }
 satosa-idpyop = { git = "https://github.com/SUNET/satosa-idpy.git" }
 satosa-openid4vci = { git = "https://github.com/SUNET/satosa-openid4vci.git" }
+pyeudiw = { git = "https://github.com/italia/eudi-wallet-it-python.git" }
