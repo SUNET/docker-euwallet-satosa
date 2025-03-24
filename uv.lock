@@ -441,6 +441,7 @@ dependencies = [
     { name = "pystache" },
     { name = "satosa-idpyop" },
     { name = "satosa-openid4vci" },
+    { name = "sd-jwt" },
     { name = "setuptools" },
     { name = "swamid-plugins" },
 ]
@@ -459,6 +460,7 @@ requires-dist = [
     { name = "pystache", specifier = ">=0.6.8" },
     { name = "satosa-idpyop", git = "https://github.com/SUNET/satosa-idpy.git" },
     { name = "satosa-openid4vci", git = "https://github.com/SUNET/satosa-openid4vci.git" },
+    { name = "sd-jwt", specifier = ">=0.10.4" },
     { name = "setuptools", specifier = ">=77.0.1" },
     { name = "swamid-plugins", specifier = "==0.1.0" },
 ]
@@ -1522,6 +1524,19 @@ source = { git = "https://github.com/SUNET/satosa-openid4vci.git#955ba369b58586c
 dependencies = [
     { name = "openid4v" },
     { name = "satosa" },
+]
+
+[[package]]
+name = "sd-jwt"
+version = "0.10.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jwcrypto" },
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/25/72/5ebc1af32fff80be8ba957598afae1e46aac35ef437b226dbf125b2ac616/sd_jwt-0.10.4.tar.gz", hash = "sha256:82f93e2f570cfd31fab124e301febb81f3bcad70b10e38f5f9cff70ad659c2ce", size = 23876 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/30/3c/ee53742c903969bcf06eaa2d1affda571953bfd812b07bd2d109f3b8cd28/sd_jwt-0.10.4-py3-none-any.whl", hash = "sha256:d7ae669eb5d51bceeb38e0df8ab2faddd12e3b21ab64d831b6d048fc1e00ce75", size = 27546 },
 ]
 
 [[package]]
