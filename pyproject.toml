@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "aiohttp>=3.11.14",
+    "device-detector>=5.0.1",
     "fedservice",
     "idpyoidc",
     "idpysdjwt",
