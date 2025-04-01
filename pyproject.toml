@@ -12,6 +12,8 @@ dependencies = [
     "idpysdjwt",
     "jwcrypto>=1.5.6",
     "openid4v",
+    "opentelemetry-distro>=0.52b1",
+    "opentelemetry-exporter-otlp>=1.31.1",
     "pyeudiw[satosa]>=0.8.0",
     "pymongo>=4.11.3",
     "pystache>=0.6.8",
