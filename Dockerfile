@@ -4,7 +4,7 @@ RUN apt update && apt install -y --no-install-recommends git xmlsec1
 COPY ./uv.lock ./pyproject.toml /
 
 RUN uv sync --frozen
-RUN opentelemetry-bootstrap -a install
+RUN uv run opentelemetry-bootstrap -a install
 ENV PATH=$PATH:/.venv/bin
 # Set language to prevent errors when breaking
 # into the container to run satosa-saml-metadata.
