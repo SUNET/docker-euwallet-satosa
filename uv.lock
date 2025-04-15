@@ -1408,8 +1408,8 @@ wheels = [
 
 [[package]]
 name = "pyeudiw"
-version = "0.9.0"
-source = { git = "https://github.com/italia/eudi-wallet-it-python.git#2fa16a74241e343de340c076a7d1d875a0fd5f48" }
+version = "1.0.0"
+source = { git = "https://github.com/italia/eudi-wallet-it-python.git#e2454c5265fee98fd4b9dc5fabcf147fe3cdfa31" }
 dependencies = [
     { name = "cryptojwt" },
     { name = "pem" },
