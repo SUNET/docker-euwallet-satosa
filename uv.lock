@@ -958,7 +958,7 @@ wheels = [
 [[package]]
 name = "openid4v"
 version = "0.9.0"
-source = { git = "https://github.com/SUNET/openid4v.git#761522cd8a6e96cb9df18b10eab9c07e468b688c" }
+source = { git = "https://github.com/SUNET/openid4v.git#9af381e628cb88abe79e8a17572a165a449dcdf2" }
 dependencies = [
     { name = "fedservice" },
     { name = "idpyoidc" },
